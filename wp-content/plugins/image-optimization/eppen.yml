@@ -1,0 +1,30 @@
+name: "Image Optimizer"
+
+ajaxActions:
+  - image_optimizer_pointer_dismissed
+  - image_optimization_deactivation_feedback
+
+restRoutes:
+  - image-optimizer/v1/stats
+  - image-optimizer/v1/stats/optimization-details
+  - image-optimizer/v1/optimize/status
+  - image-optimizer/v1/optimize/bulk/images
+  - image-optimizer/v1/optimize/image
+  - image-optimizer/v1/optimize/bulk
+  - image-optimizer/v1/optimize/bulk/cancel
+  - image-optimizer/v1/connect/activate
+  - image-optimizer/v1/connect/init
+  - image-optimizer/v1/connect/deactivate
+  - image-optimizer/v1/connect/disconnect
+  - image-optimizer/v1/connect/get-subscriptions
+  - image-optimizer/v1/connect/version
+  - image-optimizer/v1/backups
+  - image-optimizer/v1/backups/restore
+  - image-optimizer/v1/backups/restore/123
+  - image-optimizer/v1/reviews/review
+
+adminPages:
+  - image-optimization-settings
+  - image-optimization-bulk-optimization
+
+suppressions: []

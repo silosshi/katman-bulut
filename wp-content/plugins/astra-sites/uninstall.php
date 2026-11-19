@@ -1,0 +1,68 @@
+<?php
+/**
+ * Starter Templates Uninstall
+ *
+ * Fired when the plugin is deleted via the WordPress admin.
+ *
+ * @since 4.5.4
+ * @package Starter Templates
+ */
+
+defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
+
+// Site data options.
+$site_pages = get_option( 'astra-sites-requests' );
+if ( ! empty( $site_pages ) ) {
+
+	// Delete all sites.
+	for ( $site_page = 1; $site_page <= $site_pages; $site_page++ ) {
+		delete_site_option( 'astra-sites-and-pages-page-' . $site_page );
+	}
+
+	// Delete all pages count.
+	delete_site_option( 'astra-sites-requests' );
+}
+
+delete_option( 'astra_sites_recent_import_log_file' );
+delete_option( 'ai_builder_recent_import_log_file' );
+delete_option( 'astra_sites_import_data' );
+delete_option( 'astra_sites_wpforms_ids_mapping' );
+delete_option( '_astra_sites_old_customizer_data' );
+delete_option( '_astra_sites_old_site_options' );
+delete_option( '_astra_sites_old_widgets_data' );
+delete_option( 'astra_sites_settings' );
+delete_option( 'astra_parent_page_url' );
+delete_option( 'astra-sites-favorites' );
+delete_site_option( 'astra-sites-fresh-site' );
+delete_site_option( 'astra-sites-batch-status' );
+delete_site_option( 'astra-sites-batch-status-string' );
+delete_site_option( 'astra-sites-all-site-categories' );
+delete_site_option( 'astra-sites-all-site-categories-and-tags' );
+delete_site_option( 'astra-sites-current-page' );
+delete_site_option( 'astra_sites_surecart_mapping_data' );
+
+// Remove any temporary WXR export left behind by an interrupted import.
+$astra_sites_wxr_id = (int) get_option( 'astra_sites_imported_wxr_id', 0 );
+if ( $astra_sites_wxr_id ) {
+	wp_delete_attachment( $astra_sites_wxr_id, true );
+}
+delete_option( 'astra_sites_imported_wxr_id' );
+
+// Remove the capped Elementor demo-data registry and its per-id option blobs.
+$astra_sites_elementor_ids = get_option( 'astra_sites_elementor_data_ids', array() );
+if ( is_array( $astra_sites_elementor_ids ) ) {
+	foreach ( $astra_sites_elementor_ids as $astra_sites_elementor_id ) {
+		delete_option( 'astra_sites_import_elementor_data_' . $astra_sites_elementor_id );
+	}
+}
+delete_option( 'astra_sites_elementor_data_ids' );
+
+// Import state options.
+delete_option( 'astra_sites_import_complete' );
+delete_option( 'astra_sites_batch_process_started' );
+delete_option( 'astra_sites_batch_process_started_time' );
+delete_option( 'astra_sites_batch_process_complete' );
+delete_option( 'astra_sites_ai_import_started' );
+delete_option( 'ast_ai_import_current_url' );
+delete_option( 'astra_sites_import_started' );
+delete_option( 'astra_sites_current_import_template_type' );

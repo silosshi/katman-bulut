@@ -1,0 +1,31 @@
+
+[11:06:14 UTC] [INFO] Checking if plugin directory clearing is needed
+[12:02:06 UTC] [INFO] --- 
+[12:02:06 UTC] [INFO] Starting import customizer settings
+[12:02:06 UTC] [INFO] Importing customizer settings | Context: {"settings_count":0}
+[12:02:06 UTC] [INFO] Fetched customizer data from site data | Context: {"settings_count":2}
+[12:02:06 UTC] [INFO] Starting customizer settings import | Context: {"settings_count":2}
+[12:02:06 UTC] [INFO] Validating customizer data keys | Context: {"keys":["astra-settings","custom-css"]}
+[12:02:06 UTC] [INFO] Old customizer data backed up
+[12:02:06 UTC] [SUCCESS] Astra theme settings updated | Context: {"option_key":"astra-settings"}
+[12:02:06 UTC] [SUCCESS] Custom CSS updated | Context: {"option_key":"custom-css"}
+[12:02:06 UTC] [SUCCESS] Customizer settings import completed successfully
+[12:02:06 UTC] [SUCCESS] Customizer settings imported successfully
+[12:02:08 UTC] [INFO] --- 
+[12:02:08 UTC] [INFO] Starting XML preparation process
+[12:02:08 UTC] [INFO] Starting XML data preparation | Context: {"wxr_url":"https:\/\/websitedemos.net\/wp-content\/uploads\/astra-sites\/708\/wxr.xml"}
+[12:02:08 UTC] [INFO] URL validation passed: Host is allowed | Context: {"url":"https:\/\/websitedemos.net\/wp-content\/uploads\/astra-sites\/708\/wxr.xml","host":"websitedemos.net"}
+[12:02:08 UTC] [INFO] WXR URL validation passed
+[12:02:08 UTC] [INFO] Starting XML file download | Context: {"url":"https:\/\/websitedemos.net\/wp-content\/uploads\/astra-sites\/708\/wxr.xml"}
+[12:02:08 UTC] [INFO] Attempting to download file: https://websitedemos.net/wp-content/uploads/astra-sites/708/wxr.xml | Context: {"file_url":"https:\/\/websitedemos.net\/wp-content\/uploads\/astra-sites\/708\/wxr.xml","timeout_seconds":300}
+[12:02:09 UTC] [SUCCESS] File downloaded and sideloaded successfully: https://websitedemos.net/wp-content/uploads/astra-sites/708/wxr.xml | Context: {"file_url":"https:\/\/websitedemos.net\/wp-content\/uploads\/astra-sites\/708\/wxr.xml","file_size":643302,"uploaded_file":"C:\\Users\\ASUS\\Local Sites\\katman-bulut\\app\\public\/wp-content\/uploads\/2026\/11\/wxr.xml"}
+[12:02:09 UTC] [SUCCESS] XML file downloaded successfully | Context: {"file_path":"C:\\Users\\ASUS\\Local Sites\\katman-bulut\\app\\public\/wp-content\/uploads\/2026\/11\/wxr.xml"}
+[12:02:09 UTC] [INFO] Inserting XML file as attachment | Context: {"filename":"wxr.xml"}
+[12:02:09 UTC] [SUCCESS] XML attachment created | Context: {"post_id":1401}
+[12:02:09 UTC] [INFO] Generating attachment metadata | Context: {"post_id":1401}
+[12:02:09 UTC] [INFO] Parsing XML data from file | Context: {"post_id":1401}
+[12:02:09 UTC] [INFO] Starting to parse XML file for import metadata | Context: {"xml_file_path":"C:\\Users\\ASUS\\Local Sites\\katman-bulut\\app\\public\/wp-content\/uploads\/2026\/11\/wxr.xml","xml_post_id":1401}
+[12:02:09 UTC] [SUCCESS] XML file parsed successfully with import counts | Context: {"xml_file_path":"C:\\Users\\ASUS\\Local Sites\\katman-bulut\\app\\public\/wp-content\/uploads\/2026\/11\/wxr.xml","post_count":19,"media_count":36,"author_count":5,"comment_count":0,"term_count":7}
+[12:02:09 UTC] [SUCCESS] XML data preparation completed successfully | Context: {"post_id":1401,"has_data":true}
+[12:02:11 UTC] [INFO] WXR import process started | Context: {"xml_url_provided":false}
+[18:33:46 UTC] [INFO] Checking if plugin directory clearing is needed
